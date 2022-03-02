@@ -4,14 +4,10 @@
 angular.
   module('phoneDetail').
   component('phoneDetail', {
+  bindings: { phone: '<' },
     templateUrl: 'phone-detail/phone-detail.template.html',
     controller: ['$http', '$stateParams',
-      function PhoneDetailController($http, $stateParams) {
-        var self = this;
-
-        $http.get('phones/' + $stateParams.phoneId + '.json').then(function(response) {
-          self.phone = response.data;
-        });
+      function PhoneDetailController() {
       }
     ]
   });

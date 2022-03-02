@@ -7,12 +7,22 @@ config(['$stateProvider', '$urlRouterProvider',
     var states = [{
       name: 'phones',
       url: '/phones',
-      component: 'phoneList'
+      component: 'phoneList',
+      resolve: {
+        phones: function(apiService) {
+          return apiService.getPhones();
+        }
+      }
     },
     {
       name: 'phone',
       url: '/phones/{phoneId}',
-      component: 'phoneDetail'
+      component: 'phoneDetail',
+      resolve: {
+        phone: function(apiService, $stateParams) {
+          return apiService.getPhone($stateParams.phoneId);
+        }
+      }
     }];
 
     states.forEach(function(state) {

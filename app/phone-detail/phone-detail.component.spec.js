@@ -7,21 +7,14 @@ describe('phoneDetail', function() {
 
   // Test the controller
   describe('PhoneDetailController', function() {
-    var $httpBackend, ctrl;
+    var ctrl;
 
     beforeEach(inject(function($componentController, _$httpBackend_, $stateParams) {
-      $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('phones/xyz.json').respond({name: 'phone xyz'});
-
-      $stateParams.phoneId = 'xyz';
-
       ctrl = $componentController('phoneDetail');
+      ctrl.phone = {name: 'phone xyz'};
     }));
 
     it('should fetch the phone details', function() {
-      expect(ctrl.phone).toBeUndefined();
-
-      $httpBackend.flush();
       expect(ctrl.phone).toEqual({name: 'phone xyz'});
     });
 
