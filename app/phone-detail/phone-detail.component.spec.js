@@ -9,11 +9,11 @@ describe('phoneDetail', function() {
   describe('PhoneDetailController', function() {
     var $httpBackend, ctrl;
 
-    beforeEach(inject(function($componentController, _$httpBackend_, $routeParams) {
+    beforeEach(inject(function($componentController, _$httpBackend_, $stateParams) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('phones/xyz.json').respond({name: 'phone xyz'});
 
-      $routeParams.phoneId = 'xyz';
+      $stateParams.phoneId = 'xyz';
 
       ctrl = $componentController('phoneDetail');
     }));

@@ -1,16 +1,24 @@
 'use strict';
 
 angular.
-  module('phonecatApp').
-  config(['$routeProvider',
-    function config($routeProvider) {
-      $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
-        }).
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
-        }).
-        otherwise('/phones');
-    }
-  ]);
+module('phonecatApp').
+config(['$stateProvider', '$urlRouterProvider',
+  function config($stateProvider, $urlRouterProvider) {
+    var states = [{
+      name: 'phones',
+      url: '/phones',
+      component: 'phoneList'
+    },
+    {
+      name: 'phone',
+      url: '/phones/{phoneId}',
+      component: 'phoneDetail'
+    }];
+
+    states.forEach(function(state) {
+      $stateProvider.state(state);
+    });
+
+    $urlRouterProvider.otherwise('/phones');
+  }
+]);
