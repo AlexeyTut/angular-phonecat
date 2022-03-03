@@ -5,11 +5,17 @@
     <title>Google Phone Gallery</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+
+    <script src="lib/jquery/dist/jquery.js"></script>
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/@uirouter/angularjs/release/angular-ui-router.js"></script>
     <script src="app.module.js"></script>
+    <script src="services/api.module.js"></script>
     <script src="services/api.service.js"></script>
     <script src="app.config.js"></script>
+    <script src="app.animations.js"></script>
     <script src="core/core.module.js"></script>
     <script src="core/checkmark/checkmark.filter.js"></script>
     <script src="phone-list/phone-list.module.js"></script>
@@ -18,8 +24,9 @@
     <script src="phone-detail/phone-detail.component.js"></script>
   </head>
   <body>
-
-    <ui-view></ui-view>
-
+<!--    <ui-view></ui-view>-->
+  <div class="view-container">
+    <div class="view-frame" ui-view></div>
+  </div>
   </body>
 </html>

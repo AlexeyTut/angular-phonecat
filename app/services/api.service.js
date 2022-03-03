@@ -1,4 +1,4 @@
-angular.module('phonecatApp').service('apiService', function($http) {
+angular.module('api').service('apiService', function($http) {
     var service = {
         getPhones: function() {
             return $http.get('phones/phones.json').then(function(response) {
