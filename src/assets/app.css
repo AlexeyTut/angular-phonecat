@@ -37,9 +37,10 @@ h1 {
   width: 400px;
 }
 
-.phone:first-child {
-  display: block;
-}
+
+/*.phone:first-child {*/
+/*  display: block;*/
+/*}*/
 
 .phone-images {
   background-color: white;
@@ -88,4 +89,12 @@ h1 {
 .specs > li > span {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+.phone {
+  display: none;
+}
+
+.phone.selected {
+  display: block;
 }
