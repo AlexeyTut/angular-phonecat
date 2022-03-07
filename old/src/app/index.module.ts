@@ -12,8 +12,9 @@ import { NgModule } from 'angular-ts-decorators';
     'ui.router',
     'core',
     'api',
+    'utils',
     'phoneList',
-    'phoneDetail'
+    'phoneDetail',
   ]
 })
 export class AppModule {

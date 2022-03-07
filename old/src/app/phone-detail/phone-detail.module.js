@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('phoneDetail', []);
+angular.module('phoneDetail', ['log', 'utils']);

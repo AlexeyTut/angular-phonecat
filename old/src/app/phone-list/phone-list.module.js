@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('phoneList', ['api']);
+angular.module('phoneList', []);

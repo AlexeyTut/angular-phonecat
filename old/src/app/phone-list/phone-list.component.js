@@ -3,7 +3,7 @@
 angular.module('phoneList').component('phoneList', {
   bindings: { phones: '<' },
   template: require('./phone-list.template.html'),
-  controller: ['$http', function PhoneListController() {
+  controller: function PhoneListController() {
     this.orderProp = 'age';
-  }]
+  }
 });
