@@ -1775,10 +1775,10 @@
         },
 
 
-        elementChanged: function() {
+        elementChanged: function(event) {
             if (!this.element.is('input')) return;
             if (!this.element.val().length) return;
-            if (event && event.code === 'Tab') return; // To avoid end date reset on Tab
+            if (event && event.type === 'keyup' && event.code === 'Tab') return; // To avoid end date reset on Tab
 
             var dateString = this.element.val().split(this.locale.separator),
                 start = null,
