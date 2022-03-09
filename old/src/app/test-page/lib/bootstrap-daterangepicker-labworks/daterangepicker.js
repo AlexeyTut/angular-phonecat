@@ -526,7 +526,7 @@
             this.element.on({
                 'mousedown.daterangepicker': $.proxy(this.show, this),
                 'touchstart.daterangepicker': $.proxy(this.show, this),
-                // 'keyup.daterangepicker': $.proxy(this.elementChanged, this),
+                'keyup.daterangepicker': $.proxy(this.elementChanged, this),
                 'keydown.daterangepicker': $.proxy(this.keydown, this) //IE 11 compatibility
             });
             if (this.showOnFocus) {
@@ -1796,7 +1796,6 @@
             if (!start.isValid() || !end.isValid()) return;
 
             this.setStartDate(start);
-            console.log('11111111111');
             this.setEndDate(end);
             this.updateView();
         },
