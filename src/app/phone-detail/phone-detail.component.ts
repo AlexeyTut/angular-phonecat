@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IPhoneDetail } from '@src/app/types/phone-detail';
 
 @Component({
   selector: 'phone-detail-new',
@@ -7,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PhoneDetailComponent implements OnInit {
   public mainImageUrl: string = '';
 
-  @Input() phone: any;
+  @Input() phone: IPhoneDetail;
 
   public ngOnInit(): void {
     this.setImage(this.phone.images[0]);
