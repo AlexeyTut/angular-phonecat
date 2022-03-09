@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <p>
+        Search:
+        <input [(ngModel)]="query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select [(ngModel)]="orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </p>
+    </div>
+    <div class="col-md-10">
+      <ul class="phones">
+        <li *ngFor="let phone of phones | filter:'name':query | sortBy: orderProp"
+            class="thumbnail phone-list-item">
+          <a [href]="getPhoneHref(phone)" class="thumb">
+            <img [src]="getPhoneImage(phone)" [alt]="phone.name" />
+          </a>
+          <a [href]="getPhoneHref(phone)">{{phone.name}}</a>
+          <p>{{phone.snippet}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

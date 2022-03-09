@@ -8,7 +8,7 @@ angular
     var states = [{
       name: 'phones',
       url: '/phones',
-      component: 'phoneList',
+      template: '<phone-list-new [phones]="$resolve.phones"></phone-list-new>',
       resolve: {
         phones: ['apiService', function(apiService) {
           return apiService.getPhones();

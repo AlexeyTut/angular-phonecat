@@ -13,7 +13,6 @@ import { NgModule } from 'angular-ts-decorators';
     'core',
     'api',
     'utils',
-    'phoneList',
     'phoneDetail',
   ]
 })
