@@ -2,7 +2,9 @@ import 'angular';
 import 'angular-animate';
 import '@uirouter/core';
 import '@uirouter/angular-hybrid';
-import '@uirouter/angularjs/release/stateEvents'
+import '@uirouter/angularjs/release/stateEvents';
+// import 'bootstrap-daterangepicker-labworks' // required for angular-daterangepicker-labworks
+// import 'angular-daterangepicker-labworks'
 import { NgModule } from 'angular-ts-decorators';
 
 @NgModule({
@@ -12,6 +14,7 @@ import { NgModule } from 'angular-ts-decorators';
     'ui.router',
     'core',
     'api',
+    'daterangepicker',
   ]
 })
 export class AppModule {

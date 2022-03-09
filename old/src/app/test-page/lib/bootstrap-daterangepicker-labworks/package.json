@@ -1,0 +1,57 @@
+{
+  "_from": "bootstrap-daterangepicker-labworks@2.1.57",
+  "_id": "bootstrap-daterangepicker-labworks@2.1.57",
+  "_inBundle": false,
+  "_integrity": "sha512-ofRBywiBehWFjn3mBLHMYZW32503Fqeu5+C6v5ZpP0GBNkkPP0U31RomYG5Hv8U5K3MeCTN0FTvR6LYAgq4e0A==",
+  "_location": "/bootstrap-daterangepicker-labworks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bootstrap-daterangepicker-labworks@2.1.57",
+    "name": "bootstrap-daterangepicker-labworks",
+    "escapedName": "bootstrap-daterangepicker-labworks",
+    "rawSpec": "2.1.57",
+    "saveSpec": null,
+    "fetchSpec": "2.1.57"
+  },
+  "_requiredBy": [
+    "/angular-daterangepicker-labworks"
+  ],
+  "_resolved": "https://registry.npmjs.org/bootstrap-daterangepicker-labworks/-/bootstrap-daterangepicker-labworks-2.1.57.tgz",
+  "_shasum": "c3c6e8ef5191188ddb7e655dadf4f9d7ed5b8e8b",
+  "_spec": "bootstrap-daterangepicker-labworks@2.1.57",
+  "_where": "C:\\Users\\Admin\\Work\\NG-Labworks\\Labworks.Online\\Labworks.Online.Client\\node_modules\\angular-daterangepicker-labworks",
+  "author": {
+    "name": "Dan Grossman",
+    "email": "dan@dangrossman.info",
+    "url": "http://www.dangrossman.info"
+  },
+  "bugs": {
+    "url": "https://github.com/dmitryrazinkov/bootstrap-daterangepicker/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": ">=1.10",
+    "moment": "^2.9.0"
+  },
+  "deprecated": false,
+  "description": "Date range picker component for Bootstrap",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  },
+  "homepage": "https://github.com/dmitryrazinkov/bootstrap-daterangepicker",
+  "license": "MIT",
+  "main": "daterangepicker.js",
+  "name": "bootstrap-daterangepicker-labworks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitryrazinkov/bootstrap-daterangepicker.git"
+  },
+  "scripts": {
+    "scss": "node-sass daterangepicker.scss > daterangepicker.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "style": "daterangepicker.css",
+  "version": "2.1.57"
+}

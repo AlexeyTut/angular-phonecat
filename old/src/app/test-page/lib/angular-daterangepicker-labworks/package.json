@@ -1,0 +1,50 @@
+{
+  "_from": "angular-daterangepicker-labworks@0.2.37",
+  "_id": "angular-daterangepicker-labworks@0.2.37",
+  "_inBundle": false,
+  "_integrity": "sha512-MVCSoihLhegRERHXQzStEkRfEQzwUQjOf5UMjSyzbU0fG1Zj7OOBkJj5RzEHjPTD7u7saIW+A7FR9QjKepfVaQ==",
+  "_location": "/angular-daterangepicker-labworks",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "angular-daterangepicker-labworks@0.2.37",
+    "name": "angular-daterangepicker-labworks",
+    "escapedName": "angular-daterangepicker-labworks",
+    "rawSpec": "0.2.37",
+    "saveSpec": null,
+    "fetchSpec": "0.2.37"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-daterangepicker-labworks/-/angular-daterangepicker-labworks-0.2.37.tgz",
+  "_shasum": "a38e65ca1a1038afcee8e23ec57aadc7312ccc07",
+  "_spec": "angular-daterangepicker-labworks@0.2.37",
+  "_where": "C:\\Users\\Admin\\Work\\NG-Labworks\\Labworks.Online\\Labworks.Online.Client",
+  "bundleDependencies": false,
+  "dependencies": {
+    "angular": "^1.2.17",
+    "bootstrap": "^3.0.0",
+    "bootstrap-daterangepicker-labworks": "2.1.57"
+  },
+  "deprecated": false,
+  "description": "Angular.js wrapper for Dan Grosmann's bootstrap date range picker (https://github.com/dangrossman/bootstrap-daterangepicker).",
+  "devDependencies": {
+    "coffeelint": "^1.12.1",
+    "grunt": "~0.4.1",
+    "grunt-coffeelint": "^0.0.13",
+    "grunt-contrib-coffee": "^0.13.0",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ng-annotate": "^1.0.1",
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "homepage": "https://github.com/dmitryrazinkov/angular-daterangepicker",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "angular-daterangepicker-labworks",
+  "private": false,
+  "version": "0.2.37"
+}

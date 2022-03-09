@@ -15,16 +15,21 @@ angular
         }]
       }
     },
-      {
-        name: 'phone',
-        url: '/phones/{phoneId}',
-        template: '<phone-detail-new [phone]="$resolve.phone"></phone-detail-new>',
-        resolve: {
-          phone: ['apiService', '$stateParams', function(apiService, $stateParams) {
-            return apiService.getPhone($stateParams.phoneId);
-          }]
-        }
-      }];
+    {
+      name: 'phone',
+      url: '/phones/{phoneId}',
+      template: '<phone-detail-new [phone]="$resolve.phone"></phone-detail-new>',
+      resolve: {
+        phone: ['apiService', '$stateParams', function(apiService, $stateParams) {
+          return apiService.getPhone($stateParams.phoneId);
+        }]
+      }
+    },
+    {
+      name: 'test',
+      url: '/test',
+      component: 'testPage',
+    }];
 
     states.forEach(function(state) {
       $stateProvider.state(state);
