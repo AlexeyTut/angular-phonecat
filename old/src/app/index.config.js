@@ -18,7 +18,7 @@ angular
       {
         name: 'phone',
         url: '/phones/{phoneId}',
-        component: 'phoneDetail',
+        template: '<phone-detail-new [phone]="$resolve.phone"></phone-detail-new>',
         resolve: {
           phone: ['apiService', '$stateParams', function(apiService, $stateParams) {
             return apiService.getPhone($stateParams.phoneId);

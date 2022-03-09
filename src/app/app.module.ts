@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { UtilsModule } from '@src/app/services/utils/utils.module';
 import { ApiModule } from '@src/app/services/api/api.module';
 import { PhoneListModule } from '@src/app/phone-list/phone-list.module';
+import { PhoneDetailModule } from '@src/app/phone-detail/phone-detail.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     UtilsModule,
     ApiModule,
     PhoneListModule,
+    PhoneDetailModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

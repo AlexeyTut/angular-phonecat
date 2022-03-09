@@ -4,14 +4,13 @@ import {Component, Input, OnInit} from '@angular/core';
   selector: 'phone-list-new',
   templateUrl: './phone-list.component.html'
 })
-export class PhoneListNewComponent implements OnInit {
+export class PhoneListComponent implements OnInit {
   public orderProp: string = 'age';
   public query: string = '';
 
   @Input() phones: any[]
 
   ngOnInit(): void {
-    console.log(this);
   }
 
   getPhoneHref(phone: any): string {
@@ -21,6 +20,4 @@ export class PhoneListNewComponent implements OnInit {
   getPhoneImage(phone: any): string {
     return `assets/${phone.imageUrl}`;
   }
-
-
 }

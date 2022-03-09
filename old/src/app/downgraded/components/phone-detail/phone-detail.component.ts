@@ -1,12 +1,12 @@
 import angular from 'angular';
 import { downgradeComponent } from '@angular/upgrade/static';
-import { PhoneListNewComponent } from '@src/app/phone-list/phone-list.component';
+import { PhoneDetailComponent } from '@src/app/phone-detail/phone-detail.component';
 
 angular.module('phonecat')
   .directive(
-    'phoneListNew',
+    'phoneDetailNew',
     downgradeComponent({
-      component: PhoneListNewComponent,
+      component: PhoneDetailComponent,
       inputs: ['phones']
     }) as angular.IDirectiveFactory
   );
